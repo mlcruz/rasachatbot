@@ -1,18 +1,13 @@
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
-language: "pt"
-
+language: pt
 pipeline:
-  - name: "SpacyNLP"
-  - name: "SpacyTokenizer"
-  - name: "SpacyFeaturizer"
-  - name: "RegexFeaturizer"
-  - name: "CRFEntityExtractor"
-  - name: "EntitySynonymMapper"
-  - name: "SklearnIntentClassifier"
-
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
+  - model: tmp/pt_vectors_wiki_lg
+    name: SpacyNLP
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
+  - name: CRFEntityExtractor
+  - name: EntitySynonymMapper
+  - name: SklearnIntentClassifier
 policies:
   - name: MemoizationPolicy
   - name: KerasPolicy
