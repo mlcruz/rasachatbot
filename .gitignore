@@ -1,1 +1,6 @@
 env/
+models/
+tmp/
+pt_vectors.vec.gz
+__pycache__/
+.vscode/
