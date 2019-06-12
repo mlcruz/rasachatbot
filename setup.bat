@@ -8,6 +8,13 @@ python -m spacy init-model pt tmp/pt_vectors_wiki_lg --vectors-loc pt_vectors.ve
 python -m spacy link tmp/pt_vectors_wiki_lg pt
 rasa init --no-prompt
 call del /f config.yml
+call del /f domain.yml
+call del /f data/nlu.md
+call del /f data/stories.md
 call copy config_default.yml config.yml
+call copy domain_default.yml domain.yml
+call copy data/stories_default.md data/stories.md
+call copy data/nlu.md data/nlu.md
 call rmdir /S /Q models
+
 rasa train

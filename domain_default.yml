@@ -10,41 +10,40 @@ slots:
     initial_value: false
 
 intents:
-  - inicio_conversa
   - fim_conversa
   - afirmar
   - negar
+  - receber_nome
   - ler_dado
   - escrever_dado
-  - inform
 
 actions:
-  - utter_perguntar_nome
-  - utter_responder_nome
-  - utter_falar_tchau
-  - utter_pedir_comando
-  - utter_confirmar_comando
-  - utter_responder_escrita
-  - utter_responder_leitura
+  - perguntar_nome
+  - responder_nome
+  - falar_tchau
+  - pedir_comando
+  - confirmar_comando
+  - responder_escrita
+  - responder_leitura
 
 templates:
-  utter_perguntar_nome:
+  perguntar_nome:
     - text: "Olá, qual o seu nome?"
 
-  utter_responder_nome:
+  responder_nome:
     - text: "O seu nome é {name}. "
 
-  utter_falar_tchau:
+  falar_tchau:
     - text: "tchau"
 
-  utter_pedir_comando:
+  pedir_comando:
     - text: "Insira um comando"
 
-  utter_confirmar_comando:
+  confirmar_comando:
     - text: "O comando {command} está correto?"
 
-  utter_responder_leitura:
+  responder_leitura:
     - text: "Leitura"
 
-  utter_responder_escrita:
+  responder_escrita:
     - text: "Escrita"
