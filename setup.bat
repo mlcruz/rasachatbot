@@ -15,7 +15,7 @@ call del /f domain.yml
 call del /f data\nlu.md
 call del /f data\stories.md
 
-call copy defaults\actions_default.yml actions.py
+call copy defaults\actions_default.py actions.py
 call copy defaults\config_default.yml config.yml
 call copy defaults\domain_default.yml domain.yml
 call copy defaults\data\stories_default.md data\stories.md
