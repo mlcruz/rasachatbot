@@ -1,3 +1,4 @@
+
 ## intent:afirmar
 - sim
 - claro
@@ -25,3 +26,28 @@
 - nem a pau
 - nada a ver
 - claro que não
+
+## intent:receber_nome
+- Adriana
+- Ana
+- Maria
+- Sandra
+- Juliana
+- Antônio
+- Carlos
+- Francisco
+- João
+- José
+- Bruna
+- Camila
+- Jéssica
+- Letícia
+- Amanda
+- Lucas
+- Luiz
+- Matheus
+- Guilherme
+- Pedro
+- Alice
+- Isabella
+
