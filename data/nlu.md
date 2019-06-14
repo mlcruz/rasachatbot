@@ -51,6 +51,16 @@
 - Alice
 - Isabella
 
+
+## intent:cadastrar_rastreador
+- cadastrar o [GPS](rastreador) com telefone [013-991776914](n_telefone) imei [111222333444555](imei) da [vivo](apn)
+- cadastrar o telefone [013-991776914](n_telefone) da [vivo](apn)
+- cadastrar o [GPS](rastreador) com telefone [013-991776914](n_telefone)
+- [GPS](rastreador) [013-991776914](n_telefone) [111222333444555](imei) [vivo](apn)
+- [013-991776914](n_telefone) [111222333444555](imei) [vivo](apn)
+- cadastrar o [013-991776914](n_telefone)
+
+
 ## synonym:rastreador
 - Suntech
 - TK102
