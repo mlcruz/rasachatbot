@@ -51,3 +51,27 @@
 - Alice
 - Isabella
 
+## synonym:rastreador
+- Suntech
+- TK102
+- TK103
+- GPS
+- TK102
+- Celular
+- Smartphone
+- Iphone
+- Android
+
+## synonym:apn
+- Vivo
+- Oi
+- Claro
+- Claro-m2m
+- Nextel
+- Tim
+
+## regex:n_telefone
+- 0\d{2}\-\d{9}
+
+## regex:imei
+- \d{15}

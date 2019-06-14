@@ -2,14 +2,37 @@ slots:
   name:
     type: text
     initial_value: "human"
-
+  n_telefone_form:
+      type: unfeaturized
+      auto_fill: false
+  imei_form:
+      type: unfeaturized
+      auto_fill: false
+  tk_type_form:
+      type: unfeaturized
+      auto_fill: false
+  apn_form:
+      type: unfeaturized
+      auto_fill: false
 
 intents:
-- afirmar
-- fim_conversa
-- inicio_conversa
-- negar
-- receber_nome
+  - afirmar
+  - fim_conversa
+  - inicio_conversa
+  - negar
+  - cadastrar_rastreador:
+    use_entities: false
+  - receber_nome
+
+
+entities:
+  - rastreador
+  - n_telefone
+  - imei
+  - apn
+
+
+
 templates:
   utter_ask_name:
   - text: Ola, qual o seu nome?
@@ -22,3 +45,7 @@ actions:
 - utter_falar_tchau
 - utter_responder_nome
 - action_receber_nome
+
+forms:
+- cadastrar_rastreador_form
+
