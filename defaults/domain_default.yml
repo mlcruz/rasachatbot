@@ -14,7 +14,7 @@ templates:
     - text: "Olá, qual o seu nome?"
 
   utter_responder_nome:
-    - text: "O seu nome é {name}. "
+    - text: "O seu nome e {name}. "
 
   utter_falar_tchau:
     - text: "tchau"

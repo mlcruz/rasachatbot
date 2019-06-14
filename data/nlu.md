@@ -4,6 +4,7 @@
 - ok
 - certo
 - tudo bem
+- Tudo bem
 
 ## intent:fim_conversa
 - tchau
@@ -16,6 +17,7 @@
 - Olá
 - Oi
 - Acorda
+- olá
 
 ## intent:negar
 - não

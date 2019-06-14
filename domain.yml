@@ -1,20 +1,16 @@
 intents:
-  - inicio_conversa
-  - fim_conversa
-  - afirmar
-  - negar
-
-actions:
-  - utter_ask_name
-  - utter_responder_nome
-  - utter_falar_tchau
-
+- afirmar
+- fim_conversa
+- inicio_conversa
+- negar
 templates:
   utter_ask_name:
-    - text: "Olá, qual o seu nome?"
-
+  - text: Ola, qual o seu nome?
   utter_responder_nome:
-    - text: "O seu nome é {name}. "
-
+  - text: O seu nome e jorge
   utter_falar_tchau:
-    - text: "tchau"
+  - text: tchau
+actions:
+- utter_ask_name
+- utter_falar_tchau
+- utter_responder_nome
