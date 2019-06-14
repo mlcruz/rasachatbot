@@ -5,7 +5,7 @@ intents:
   - inicio_conversa
   - negar
   - cadastrar_rastreador:
-    use_entities: false
+      use_entities: false
   - receber_nome
 
 
@@ -54,6 +54,8 @@ actions:
 - utter_falar_tchau
 - utter_responder_nome
 - action_receber_nome
+- utter_entra_acao
+- utter_slots_values
 
 forms:
 - cadastrar_rastreador_form
