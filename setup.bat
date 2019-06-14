@@ -16,5 +16,4 @@ call copy domain_default.yml domain.yml
 call copy data/stories_default.md data/stories.md
 call copy data/nlu.md data/nlu.md
 call rmdir /S /Q models
-
 rasa train
