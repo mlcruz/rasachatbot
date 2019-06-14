@@ -1,3 +1,4 @@
+@echo off
 python -m venv env
 call %cd%\env\Scripts\activate.bat
 call curl https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.pt.300.vec.gz --output "pt_vectors.vec.gz"
@@ -9,11 +10,11 @@ python -m spacy link tmp/pt_vectors_wiki_lg pt
 rasa init --no-prompt
 call del /f config.yml
 call del /f domain.yml
-call del /f data/nlu.md
-call del /f data/stories.md
-call copy config_default.yml config.yml
-call copy domain_default.yml domain.yml
-call copy data/stories_default.md data/stories.md
-call copy data/nlu.md data/nlu.md
+call del /f data\nlu.md
+call del /f data\stories.md
+call copy defaults\config_default.yml config.yml
+call copy defaults\domain_default.yml domain.yml
+call copy defaults\data\stories_default.md data\stories.md
+call copy defaults\data\nlu_default.md data\nlu.md
 call rmdir /S /Q models
 rasa train
