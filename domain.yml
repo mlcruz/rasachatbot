@@ -5,7 +5,7 @@ intents:
   - inicio_conversa
   - negar
   - cadastrar_rastreador:
-    use_entities: false
+      use_entities: false
   - receber_nome
 
 
@@ -48,7 +48,7 @@ templates:
              - telefone: {n_telefone_form}\n
              - imei: {imei_form}\n
              - rastreador: {tk_type_form}\n
-             - apn: {apn_form}\n
+             - apn: {apn_form}\n"
 actions:
 - utter_ask_name
 - utter_falar_tchau
