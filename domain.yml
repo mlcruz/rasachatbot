@@ -17,7 +17,7 @@ templates:
   utter_confirmar_problema_rastreador:
   - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
 
-  actions:
+actions:
 - utter_inicio
 - utter_confirmar_problema_rastreador
 - utter_sair_humano
