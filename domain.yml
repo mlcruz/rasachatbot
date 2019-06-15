@@ -1,15 +1,25 @@
 
 intents:
   - afirmar
-  - fim_conversa
-  - inicio_conversa
   - negar
+  - pedir_humano
+
+  - resolver_problema_rastreador
+
+
+  - fim_conversa
 
 templates:
-  utter_ask_name:
-  - text: Ola, qual o seu nome?
+  utter_inicio:
+  - text: Olá, o que você gostaria de fazer?
+  utter_sair_humano:
+  - text: Certo, passando para o suporte tecnico
+  utter_confirmar_problema_rastreador:
+  - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
 
   actions:
-- utter_ask_name
+- utter_inicio
+- utter_confirmar_problema_rastreador
+- utter_sair_humano
 
 
