@@ -7,6 +7,10 @@
 - tudo bem
 - Tudo bem
 
+## intent:inicio_conversa
+- Olá
+- Oi
+
 ## intent:fim_conversa
 - tchau
 - até mais

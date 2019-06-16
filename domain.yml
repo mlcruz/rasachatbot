@@ -1,5 +1,6 @@
 
 intents:
+  - inicio_conversa
   - afirmar
   - negar
   - pedir_humano
@@ -12,14 +13,23 @@ intents:
 templates:
   utter_inicio:
   - text: Olá, o que você gostaria de fazer?
-  utter_sair_humano:
+  utter_perguntar_resolvido:
+  - text: Seu problema foi resolvido?
+  utter_perguntar_pedir_humano:
+  - text: Gostaria de ser redirecionado para o suporte tecnico?
+  utter_confirmar_pedir_humano:
   - text: Certo, passando para o suporte tecnico
   utter_confirmar_problema_rastreador:
   - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
+  utter_tchau:
+  - text: Tchau!
 
 actions:
 - utter_inicio
+- utter_perguntar_resolvido
+- utter_perguntar_pedir_humano
+- utter_confirmar_pedir_humano
 - utter_confirmar_problema_rastreador
-- utter_sair_humano
+- utter_tchau
 
 

@@ -1,62 +1,35 @@
 
 intents:
-  - afirmar
-  - fim_conversa
   - inicio_conversa
+  - afirmar
   - negar
-  - cadastrar_rastreador:
-      use_entities: false
-  - receber_nome
+  - pedir_humano
+
+  - resolver_problema_rastreador
 
 
-entities:
-  - rastreador
-  - n_telefone
-  - imei
-  - apn
-
-slots:
-  name:
-    type: text
-    initial_value: "human"
-  n_telefone_form:
-      type: unfeaturized
-      auto_fill: false
-  imei_form:
-      type: unfeaturized
-      auto_fill: false
-  tk_type_form:
-      type: unfeaturized
-      auto_fill: false
-  apn_form:
-      type: unfeaturized
-      auto_fill: false
-
+  - fim_conversa
 
 templates:
-  utter_ask_name:
-  - text: Ola, qual o seu nome?
-  utter_responder_nome:
-  - text: O seu nome é {name}
-  utter_falar_tchau:
-  - text: tchau
-  utter_entra_acao:
-  - text: O que você quer fazer?
+  utter_inicio:
+  - text: Olá, o que você gostaria de fazer?
+  utter_perguntar_resolvido:
+  - text: Seu problema foi resolvido?
+  utter_perguntar_pedir_humano:
+  - text: Gostaria de ser redirecionado para o suporte tecnico?
+  utter_confirmar_pedir_humano:
+  - text: Certo, passando para o suporte tecnico
+  utter_confirmar_problema_rastreador:
+  - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
+  utter_tchau:
+  - text: Tchau!
 
-  utter_slots_values:
-    - text: "Seus parametros:\n
-             - telefone: {n_telefone_form}\n
-             - imei: {imei_form}\n
-             - rastreador: {tk_type_form}\n
-             - apn: {apn_form}\n"
 actions:
-- utter_ask_name
-- utter_falar_tchau
-- utter_responder_nome
-- action_receber_nome
-- utter_entra_acao
-- utter_slots_values
+- utter_inicio
+- utter_perguntar_resolvido
+- utter_perguntar_pedir_humano
+- utter_confirmar_pedir_humano
+- utter_confirmar_problema_rastreador
+- utter_tchau
 
-forms:
-- cadastrar_rastreador_form
 

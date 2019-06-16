@@ -1,14 +1,40 @@
-## Happy Path
-
+## Inicio Conversa Feliz 1
 * inicio_conversa
-   - utter_ask_name
-* receber_nome
-   - action_receber_nome
-   - utter_responder_nome
-   - utter_entra_acao
-* cadastrar_rastreador
-   - form{"name": "cadastrar_rastreador_form"}
-   - utter_slots_values
-* fim_conversa
-   - utter_falar_tchau
+    - utter_inicio  
+* resolver_problema_rastreador
+    - utter_confirmar_problema_rastreador
+* afirmar
+    - utter_perguntar_resolvido
+* afirmar
+    - utter_tchau
+
+## Inicio Conversa Triste 1
+* inicio_conversa
+    - utter_inicio  
+* resolver_problema_rastreador
+    - utter_confirmar_problema_rastreador
+* negar
+    - utter_perguntar_pedir_humano 
+* afirmar
+    - utter_confirmar_pedir_humano
+
+## Inicio Conversa Triste 2
+* inicio_conversa
+    - utter_inicio  
+* pedir_humano
+    - utter_sair_humano
+
+
+## Inicio Conversa Triste 3
+* inicio_conversa
+    - utter_inicio  
+* resolver_problema_rastreador
+    - utter_confirmar_problema_rastreador
+* afirmar
+    - utter_perguntar_resolvido
+* negar
+    - utter_perguntar_pedir_humano 
+* afirmar
+    - utter_confirmar_pedir_humano
+
 
