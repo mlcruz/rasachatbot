@@ -1,3 +1,8 @@
+slots:
+  nome:
+    type: text
+    initial_value: "anonimo"
+
 
 intents:
   - inicio_conversa
@@ -9,12 +14,17 @@ intents:
   - resolver_problema_pagamento
   - resolver_problema_esqueci_senha
   - resolver_problema_login
-
+  
+  - responder_nome
+  
+  - mostrar_meus_dados
   - fim_conversa
 
 templates:
+  utter_perguntar_nome:
+  - text: Olá, qual é o seu nome?
   utter_inicio:
-  - text: Olá, o que você gostaria de fazer?
+  - text: Olá {nome}, O que você gostaria de fazer?
   utter_perguntar_resolvido:
   - text: Seu problema foi resolvido?
   utter_perguntar_pedir_humano:
@@ -33,6 +43,8 @@ templates:
   - text: Tchau!
 
 actions:
+- action_receber_nome
+- utter_perguntar_nome
 - utter_inicio
 - utter_perguntar_resolvido
 - utter_perguntar_pedir_humano

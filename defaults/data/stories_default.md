@@ -1,6 +1,9 @@
 ## Inicio Conversa Resolver Problemas Feliz 1
 * inicio_conversa
-    - utter_inicio  
+    - utter_perguntar_nome
+* responder_nome
+    - action_receber_nome
+    - utter_inicio
 * resolver_problema_rastreador OR resolver_problema_pagamento OR resolver_problema_esqueci_senha OR resolver_problema_login
 > check_resolver_problema
 
@@ -43,6 +46,9 @@
 
 ## Inicio Conversa Triste 1
 * inicio_conversa
+    - utter_perguntar_nome
+* responder_nome
+    - action_receber_nome
     - utter_inicio  
 * resolver_problema_rastreador
     - utter_confirmar_problema_rastreador
@@ -53,14 +59,20 @@
 
 ## Inicio Conversa Triste 2
 * inicio_conversa
-    - utter_inicio  
+    - utter_perguntar_nome
+* responder_nome
+    - action_receber_nome
+    - utter_inicio 
 * pedir_humano
-    - utter_sair_humano
+    - utter_confirmar_pedir_humano
 
 
 ## Inicio Conversa Triste 3
 * inicio_conversa
-    - utter_inicio  
+    - utter_perguntar_nome
+* responder_nome
+    - action_receber_nome
+    - utter_inicio 
 * resolver_problema_rastreador
     - utter_confirmar_problema_rastreador
 * afirmar
