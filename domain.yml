@@ -1,50 +1,56 @@
-slots:
-  nome:
-    type: text
-    initial_value: "anonimo"
-  userId:
-    type: text
-  
-    
-
-
+%YAML 1.1
+---
+actions:
+- action_mostrar_dados
+- action_receber_user_id
+- utter_confirmar_pedir_humano
+- utter_confirmar_problema_rastreador
+- utter_inicio
+- utter_perguntar_nome
+- utter_perguntar_pedir_humano
+- utter_perguntar_resolvido
+- utter_tchau
+entities:
+- user_id
 intents:
-  - inicio_conversa
-  - afirmar
-  - negar
-  - pedir_humano
-
-  - resolver_problema_rastreador
-  
-  - responder_userId
-  - mostrar_meus_dados
-  - fim_conversa
-
+- inicio_conversa
+- afirmar
+- fim_conversa
+- mostrar_meus_dados
+- responder_user_id
+- pedir_humano
+- resolver_problema_rastreador
+- negar
+slots:
+  first_name:
+    initial_value: anonimo
+    type: unfeaturized
+  is_actived:
+    type: unfeaturized
+  last_name:
+    type: unfeaturized
+  rastreadores:
+    type: unfeaturized
+  user_id:
+    type: text
+  user_name:
+    type: unfeaturized
 templates:
-  utter_perguntar_nome:
-  - text: Olá, qual é o seu userId
-  utter_inicio:
-  - text: Olá {nome}, O que você gostaria de fazer?
-  utter_perguntar_resolvido:
-  - text: Seu problema foi resolvido?
-  utter_perguntar_pedir_humano:
-  - text: Gostaria de ser redirecionado para o suporte tecnico?
   utter_confirmar_pedir_humano:
   - text: Certo, passando para o suporte tecnico
   utter_confirmar_problema_rastreador:
   - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
+  utter_inicio:
+  - text: Olá {first_name} {last_name}. \n Seu email cadastrado é {user_name} e seu
+      usuario está {is_actived} \n O que você gostaria de fazer?
+  utter_mostrar_dados:
+  - text: Olá {first_name} {last_name}. \n Seu email cadastrado é {user_name} e seu
+      usuario está {is_actived}
+  utter_perguntar_nome:
+  - text: Olá, qual é o seu userId
+  utter_perguntar_pedir_humano:
+  - text: Gostaria de ser redirecionado para o suporte tecnico?
+  utter_perguntar_resolvido:
+  - text: Seu problema foi resolvido?
   utter_tchau:
   - text: Tchau!
-
-actions:
-- action_receber_userId
-- action_mostra_dados
-- utter_perguntar_nome
-- utter_inicio
-- utter_perguntar_resolvido
-- utter_perguntar_pedir_humano
-- utter_confirmar_pedir_humano
-- utter_confirmar_problema_rastreador
-- utter_tchau
-
-
