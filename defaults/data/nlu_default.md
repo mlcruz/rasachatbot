@@ -52,3 +52,21 @@
 - gps não aparece
 - gps não aparece no mapa
 - gps bloqueado
+
+## intent:resolver_problema_pagamento
+- não consigo realizar um pagamento
+- minha conta está bloqueada por falta de pagamento
+- o pagamento não funciona
+
+## intent:resolver_problema_esqueci_senha
+- esqueci minha senha
+- não lembro a minha senha
+- minha senha não funciona
+
+## intent:resolver_problema_login
+- não consigo fazer login
+- não consigo acessar minha conta
+- estou com problemas para fazer login
+- minha conta não entra
+- problemas para entrar na conta
+
