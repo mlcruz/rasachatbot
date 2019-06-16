@@ -3,13 +3,15 @@
 actions:
 - action_mostrar_dados
 - action_receber_user_id
+- action_verificar_erros
 - utter_confirmar_pedir_humano
-- utter_confirmar_problema_rastreador
+- utter_confirmar_problema
 - utter_inicio
 - utter_perguntar_nome
 - utter_perguntar_pedir_humano
 - utter_perguntar_resolvido
 - utter_tchau
+- utter_confirmar_problema_resolvido
 entities:
 - user_id
 intents:
@@ -20,6 +22,7 @@ intents:
 - afirmar
 - pedir_humano
 - resolver_problema_rastreador
+- resolver_problema_conta
 - negar
 slots:
   first_name:
@@ -38,8 +41,8 @@ slots:
 templates:
   utter_confirmar_pedir_humano:
   - text: Certo, passando para o suporte tecnico
-  utter_confirmar_problema_rastreador:
-  - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
+  utter_confirmar_problema:
+  - text: Tudo bem, eu entendi que você está com problemas. Vou iniciar uma verificação automatica, Tudo bem?
   utter_inicio:
   - text: Olá {first_name} {last_name}. O que você gostaria de fazer?
   utter_mostrar_dados:
@@ -50,5 +53,7 @@ templates:
   - text: Gostaria de ser redirecionado para o suporte tecnico?
   utter_perguntar_resolvido:
   - text: Seu problema foi resolvido?
+  utter_confirmar_problema_resolvido:
+  - text: Fico Feliz em resolver o seu problema. Deseja continuar?
   utter_tchau:
   - text: Tchau!

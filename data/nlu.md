@@ -74,7 +74,13 @@
 - gps não aparece no mapa
 - gps bloqueado
 - Meu rastreador tem problemas
-- Mostre minhas informacoes
+
+## intent:resolver_problema_conta
+- minha conta não está funcionando
+- não consigo logar
+- não consigo entrar no site
+
+
 
 ## intent:responder_user_id
 - [b95153c1-8cd0-41a4-a3e2-b3394efb9020](user_id)

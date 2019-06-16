@@ -1,84 +1,125 @@
-## Inicio Conversa Resolver Problemas Feliz 1
+## Inicio Conversa Feliz
 * inicio_conversa
     - utter_perguntar_nome
 * responder_user_id
     - action_receber_user_id
     - utter_inicio
-* resolver_problema_rastreador
-> check_resolver_problema
+> check_inicio_conversa
 
+## Inicio Conversa Feliz 1
+* fim_conversa
+    - utter_perguntar_pedir_humano
+* negar 
+    - utter_perguntar_nome
+* responder_user_id
+    - action_receber_user_id
+    - utter_inicio
+> check_inicio_conversa
 
-## Problema Rastreador 1
-> check_resolver_problema 
-* resolver_problema_rastreador
-    - utter_confirmar_problema_rastreador
-* afirmar
-    - utter_perguntar_resolvido
-* afirmar
+## Inicio Conversa Triste
+* pedir_humano
+    - utter_confirmar_pedir_humano
     - utter_tchau
 
-
-## Generated Story -9140261867826249853
+## Inicio Conversa Triste 2
 * inicio_conversa
     - utter_perguntar_nome
-* responder_user_id{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
-    - action_receber_user_id
-    - utter_inicio
+* pedir_humano
+    - utter_confirmar_pedir_humano
+    - utter_tchau
 
-## Generated Story -6831051140549415556
+## Inicio Conversa Triste 3
 * inicio_conversa
     - utter_perguntar_nome
-* responder_user_id{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
-    - slot{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
+* responder_user_id
     - action_receber_user_id
-    - slot{"first_name": "Fulano"}
-    - slot{"last_name": "aczhtp"}
-    - slot{"is_actived": true}
-    - slot{"user_name": "fulano@email.com"}
-    - utter_inicio
-* resolver_problema_rastreador
-    - rewind
-* mostrar_meus_dados
-    - action_mostrar_dados
     - utter_inicio
 * pedir_humano
     - utter_confirmar_pedir_humano
+    - utter_tchau
 
-## Generated Story 5459356589743638153
+## Inicio Conversa Triste 4
+* inicio_conversa
+    - utter_perguntar_nome
+* fim_conversa
+    - utter_perguntar_pedir_humano
+* afirmar 
+    - utter_confirmar_pedir_humano
+    - utter_tchau
+
+## Inicio Conversa Triste 4
+* fim_conversa
+    - utter_perguntar_pedir_humano
+* afirmar 
+    - utter_confirmar_pedir_humano
+    - utter_tchau
+
+## Inicio Resolver Problemas
+> check_inicio_conversa
+* resolver_problema_rastreador OR resolver_problema_login
+    -utter_confirmar_problema
+> check_resolver_problema
+
+
+## Inicio Mostrar dados e ir embora
+> check_inicio_conversa
+* mostrar_meus_dados
+    - utter_confirmar_problema
+    - action_mostrar_dados
+* fim_conversa
+    - utter_perguntar_resolvido
+> check_perguntar_resolvido
+
+
+## Resolver problema
+> check_resolver_problema 
 * afirmar
-    - rewind
-* inicio_conversa
-    - utter_perguntar_nome
-* responder_user_id
-    - rewind
-* responder_user_id{"user_id": "3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA"}
-    - slot{"user_id": "3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA"}
-    - action_receber_user_id
-    - slot{"first_name": "Beltrano"}
-    - slot{"last_name": "aqqerp"}
-    - slot{"is_actived": true}
-    - slot{"user_name": "beltrano@email.com"}
-    - utter_inicio
-* mostrar_meus_dados
-    - action_mostrar_dados
-    - utter_inicio
-* fim_conversa
+    - action_verificar_erros
+    - utter_perguntar_resolvido
+> check_perguntar_resolvido
+
+## Problema errado 
+> check_resolver_problema 
+* negar
+    - utter_perguntar_pedir_humano
+* afirmar
+    - utter_confirmar_pedir_humano
     - utter_tchau
 
-## Generated Story 2827390774901534600
-* inicio_conversa
-    - utter_perguntar_nome
-* responder_user_id{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
-    - slot{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
-    - action_receber_user_id
-    - slot{"first_name": "Fulano"}
-    - slot{"last_name": "aczhtp"}
-    - slot{"is_actived": true}
-    - slot{"user_name": "fulano@email.com"}
+## Problema quer suporte mas não quer
+> check_resolver_problema 
+* negar
+    - utter_perguntar_pedir_humano
+* afirmar
     - utter_inicio
-* mostrar_meus_dados
-    - action_mostrar_dados
-    - slot{"rastreadores": {"tk": ["tracker"]}}
-    - utter_inicio
-* fim_conversa
+
+## Problema resolvido Feliz 1
+> check_perguntar_resolvido
+* afirmar
+    - utter_confirmar_problema_resolvido
+* negar 
     - utter_tchau
+
+## Problema resolvido Feliz 2
+> check_perguntar_resolvido
+* afirmar
+    - utter_confirmar_problema_resolvido
+* afirmar 
+    - utter_inicio_conversa
+> check_inicio_conversa
+
+## Problema resolvido Triste 1
+> check_perguntar_resolvido
+* negar
+    - utter_perguntar_pedir_humano
+* afirmar
+    - utter_confirmar_pedir_humano
+    - utter_tchau
+
+## Problema resolvido Triste 2
+> check_perguntar_resolvido
+* negar
+    - utter_perguntar_pedir_humano
+* negar
+    - utter_inicio_conversa
+> check_inicio_conversa

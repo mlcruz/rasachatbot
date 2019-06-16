@@ -48,3 +48,19 @@ class ActionMostrarDados(Action):
             
 
         return [SlotSet("rastreadores", {"tk" : tks})]
+
+
+class ActionVerificarErros(Action):
+
+    def name(self) -> Text:
+        return "action_verificar_erros"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_id = tracker.get_slot("user_id")
+        errorData = requests.get(f'http://localhost:10000/api/actions/{user_id}/sanity')
+        data = errorData.json()
+        dispatcher.utter_message(f"{data}")
+        return []
