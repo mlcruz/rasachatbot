@@ -13,11 +13,11 @@ actions:
 entities:
 - user_id
 intents:
-- inicio_conversa
-- afirmar
-- fim_conversa
 - mostrar_meus_dados
 - responder_user_id
+- fim_conversa
+- inicio_conversa
+- afirmar
 - pedir_humano
 - resolver_problema_rastreador
 - negar
@@ -30,7 +30,7 @@ slots:
   last_name:
     type: unfeaturized
   rastreadores:
-    type: unfeaturized
+    type: list
   user_id:
     type: text
   user_name:
@@ -41,11 +41,9 @@ templates:
   utter_confirmar_problema_rastreador:
   - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
   utter_inicio:
-  - text: Olá {first_name} {last_name}. \n Seu email cadastrado é {user_name} e seu
-      usuario está {is_actived} \n O que você gostaria de fazer?
+  - text: Olá {first_name} {last_name}. O que você gostaria de fazer?
   utter_mostrar_dados:
-  - text: Olá {first_name} {last_name}. \n Seu email cadastrado é {user_name} e seu
-      usuario está {is_actived}
+  - text: Olá {first_name} {last_name}. Seu email cadastrado é {user_name}
   utter_perguntar_nome:
   - text: Olá, qual é o seu userId
   utter_perguntar_pedir_humano:

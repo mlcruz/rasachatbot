@@ -64,3 +64,21 @@
     - utter_inicio
 * fim_conversa
     - utter_tchau
+
+## Generated Story 2827390774901534600
+* inicio_conversa
+    - utter_perguntar_nome
+* responder_user_id{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
+    - slot{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
+    - action_receber_user_id
+    - slot{"first_name": "Fulano"}
+    - slot{"last_name": "aczhtp"}
+    - slot{"is_actived": true}
+    - slot{"user_name": "fulano@email.com"}
+    - utter_inicio
+* mostrar_meus_dados
+    - action_mostrar_dados
+    - slot{"rastreadores": {"tk": ["tracker"]}}
+    - utter_inicio
+* fim_conversa
+    - utter_tchau

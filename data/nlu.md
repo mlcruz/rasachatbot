@@ -17,6 +17,7 @@
 - até logo
 - Olá
 - vou embora bot fedido
+- Vou embora esse bot é muito estupido
 
 ## intent:inicio_conversa
 - Olá
@@ -25,6 +26,7 @@
 - Olá
 - Olá
 - Oi, tudo bem?
+- Olá
 
 ## intent:mostrar_meus_dados
 - saber meus dados
@@ -34,6 +36,7 @@
 - Meu rastreador tem problemas
 - Mostre minhas informacoes
 - Meus dados
+- mostrar meus dados
 
 ## intent:negar
 - não
@@ -81,6 +84,7 @@
 - [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
 - meu id é 3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA
 - meu id é [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id)
+- user_id: [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
 
 ## synonym:b95153c1-8cd0-41a4-a3e2-b3394efb9020
 - B95153C1-8CD0-41A4-A3E2-B3394EFB9020
