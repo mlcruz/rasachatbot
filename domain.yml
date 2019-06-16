@@ -21,10 +21,10 @@ intents:
   - fim_conversa
 
 templates:
-  utter_pedir_nome:
+  utter_perguntar_nome:
   - text: Olá, qual é o seu nome?
   utter_inicio:
-  - text: Olá, o que você gostaria de fazer?
+  - text: Olá {nome}, O que você gostaria de fazer?
   utter_perguntar_resolvido:
   - text: Seu problema foi resolvido?
   utter_perguntar_pedir_humano:
@@ -43,7 +43,8 @@ templates:
   - text: Tchau!
 
 actions:
-- utter_pedir_nome
+- action_receber_nome
+- utter_perguntar_nome
 - utter_inicio
 - utter_perguntar_resolvido
 - utter_perguntar_pedir_humano
@@ -53,6 +54,5 @@ actions:
 - utter_confirmar_problema_esqueci_senha
 - utter_confirmar_problema_login
 - utter_tchau
-- action_receber_nome
 
 
