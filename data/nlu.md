@@ -70,3 +70,32 @@
 - minha conta não entra
 - problemas para entrar na conta
 
+## intent:mostrar_meus_dados
+- saber meus dados
+- saber a posicao do meu rastreador
+- onde está meu rastreador
+- quais os meus rastreadores
+
+## intent:responder_nome
+- Adriana
+- Ana
+- Maria
+- Sandra
+- Juliana
+- Antonio
+- Carlos
+- Francisco
+- JoÃ£o
+- JosÃ©
+- Bruna
+- Camila
+- JÃ©ssica
+- LetÃ­cia
+- Amanda
+- Lucas
+- Luiz
+- Matheus
+- Guilherme
+- Pedro
+- Alice
+- Isabella

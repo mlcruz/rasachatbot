@@ -1,0 +1,10 @@
+[
+  {
+    "text": "minha conta está bloqueada por falta de pagamento",
+    "intent": "resolver_problema_pagamento",
+    "intent_prediction": {
+      "name": "pedir_humano",
+      "confidence": 0.28148342167657375
+    }
+  }
+]

@@ -55,7 +55,7 @@
 * inicio_conversa
     - utter_inicio  
 * pedir_humano
-    - utter_sair_humano
+    - utter_confirmar_pedir_humano
 
 
 ## Inicio Conversa Triste 3
