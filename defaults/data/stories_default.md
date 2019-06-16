@@ -22,8 +22,7 @@
 * inicio_conversa
     - utter_inicio  
 * pedir_humano
-    - utter_sair_humano
-
+    - utter_confirmar_pedir_humano
 
 ## Inicio Conversa Triste 3
 * inicio_conversa
@@ -36,5 +35,3 @@
     - utter_perguntar_pedir_humano 
 * afirmar
     - utter_confirmar_pedir_humano
-
-
