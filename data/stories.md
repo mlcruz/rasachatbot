@@ -56,7 +56,7 @@
 
 ## Inicio Resolver Problemas
 > check_inicio_conversa
-* resolver_problema_rastreador OR resolver_problema_login
+* resolver_problema_rastreador OR resolver_problema_conta
     -utter_confirmar_problema
 > check_resolver_problema
 
@@ -105,7 +105,7 @@
 * afirmar
     - utter_confirmar_problema_resolvido
 * afirmar 
-    - utter_inicio_conversa
+    - utter_inicio
 > check_inicio_conversa
 
 ## Problema resolvido Triste 1
@@ -121,5 +121,5 @@
 * negar
     - utter_perguntar_pedir_humano
 * negar
-    - utter_inicio_conversa
+    - utter_inicio
 > check_inicio_conversa

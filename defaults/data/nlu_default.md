@@ -63,7 +63,7 @@
 - não lembro a minha senha
 - minha senha não funciona
 
-## intent:resolver_problema_login
+## intent:resolver_problema_conta
 - não consigo fazer login
 - não consigo acessar minha conta
 - estou com problemas para fazer login

@@ -80,8 +80,6 @@
 - não consigo logar
 - não consigo entrar no site
 
-
-
 ## intent:responder_user_id
 - [b95153c1-8cd0-41a4-a3e2-b3394efb9020](user_id)
 - meu id é [09516532-8123-4444-ase2-a24efb9020](user_id)
