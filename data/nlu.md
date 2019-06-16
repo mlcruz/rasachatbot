@@ -53,49 +53,14 @@
 - gps não aparece no mapa
 - gps bloqueado
 
-## intent:resolver_problema_pagamento
-- não consigo realizar um pagamento
-- minha conta está bloqueada por falta de pagamento
-- o pagamento não funciona
-
-## intent:resolver_problema_esqueci_senha
-- esqueci minha senha
-- não lembro a minha senha
-- minha senha não funciona
-
-## intent:resolver_problema_login
-- não consigo fazer login
-- não consigo acessar minha conta
-- estou com problemas para fazer login
-- minha conta não entra
-- problemas para entrar na conta
-
 ## intent:mostrar_meus_dados
 - saber meus dados
 - saber a posicao do meu rastreador
 - onde está meu rastreador
 - quais os meus rastreadores
 
-## intent:responder_nome
-- Adriana
-- Ana
-- Maria
-- Sandra
-- Juliana
-- Antonio
-- Carlos
-- Francisco
-- JoÃ£o
-- JosÃ©
-- Bruna
-- Camila
-- JÃ©ssica
-- LetÃ­cia
-- Amanda
-- Lucas
-- Luiz
-- Matheus
-- Guilherme
-- Pedro
-- Alice
-- Isabella
+## intent:responder_userId
+- [b95153c1-8cd0-41a4-a3e2-b3394efb9020](userId)
+- meu id é [09516532-8123-4444-ase2-a24efb9020](userId)
+## regex:userId
+- [\d\w]{8}-[\d\w]{4}-[\d\w]{4}-[\d\w]{4}-[\d\w]{12}

@@ -4,11 +4,11 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 from rasa_sdk.forms import FormAction
-
+from requests import requests
 
 
 class ActionReceberNome(Action):
-
+    
     def name(self) -> Text:
         return "action_receber_nome"
 

@@ -2,6 +2,10 @@ slots:
   nome:
     type: text
     initial_value: "anonimo"
+  userId:
+    type: text
+  
+    
 
 
 intents:
@@ -12,13 +16,13 @@ intents:
 
   - resolver_problema_rastreador
   
-  - responder_nome
+  - responder_userId
   - mostrar_meus_dados
   - fim_conversa
 
 templates:
   utter_perguntar_nome:
-  - text: Olá, qual é o seu nome?
+  - text: Olá, qual é o seu userId
   utter_inicio:
   - text: Olá {nome}, O que você gostaria de fazer?
   utter_perguntar_resolvido:
@@ -33,7 +37,8 @@ templates:
   - text: Tchau!
 
 actions:
-- action_receber_nome
+- action_receber_userId
+- action_mostra_dados
 - utter_perguntar_nome
 - utter_inicio
 - utter_perguntar_resolvido

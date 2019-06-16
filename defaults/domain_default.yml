@@ -11,12 +11,8 @@ intents:
   - pedir_humano
 
   - resolver_problema_rastreador
-  - resolver_problema_pagamento
-  - resolver_problema_esqueci_senha
-  - resolver_problema_login
   
   - responder_nome
-  
   - mostrar_meus_dados
   - fim_conversa
 
@@ -33,12 +29,6 @@ templates:
   - text: Certo, passando para o suporte tecnico
   utter_confirmar_problema_rastreador:
   - text: Tudo bem, eu entendi que seu rastreador está com problemas. Correto?
-  utter_confirmar_problema_pagamento:
-  - text: Tudo bem, eu entendi que você está com problemas relacionados a pagamento. Correto?
-  utter_confirmar_problema_esqueci_senha:
-  - text: Tudo bem, eu entendi que você esqueceu sua senha. Correto?
-  utter_confirmar_problema_login:
-  - text: Tudo bem, eu entendi que você não consegue fazer login. Correto?
   utter_tchau:
   - text: Tchau!
 
@@ -50,9 +40,6 @@ actions:
 - utter_perguntar_pedir_humano
 - utter_confirmar_pedir_humano
 - utter_confirmar_problema_rastreador
-- utter_confirmar_problema_pagamento
-- utter_confirmar_problema_esqueci_senha
-- utter_confirmar_problema_login
 - utter_tchau
 
 
