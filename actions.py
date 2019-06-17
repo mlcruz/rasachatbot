@@ -44,9 +44,9 @@ class ActionMostrarDados(Action):
 
         # Imprime sequencia de msg informando os dados da conta do usuario
 
-        is_activated = "Sua conta está ativa"
+        is_activated = "ativa"
         if (tracker.slots["is_actived"] == False):
-            is_activated = "Sua conta está inativa"
+            is_activated = "inativa"
 
         dispatcher.utter_template("utter_mostrar_dados", tracker)
         dispatcher.utter_message(f"sua conta está {is_activated} \n")
