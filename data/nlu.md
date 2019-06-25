@@ -9,6 +9,13 @@
 - Tudo tranquilo
 - Sim
 
+## intent:perguntar_sentimentos
+- Como está você?
+- Você está feliz?
+- Você está triste?
+- Tudo bem com você?
+
+
 ## intent:fim_conversa
 - tchau
 - até mais

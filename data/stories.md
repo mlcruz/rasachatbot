@@ -63,6 +63,47 @@
     - utter_perguntar_resolvido
 > check_perguntar_resolvido
 
+## Conversa Fiada 1
+> check_inicio_conversa
+* perguntar_sentimentos
+    - utter_responder_sentimentos
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_responder_sentimento_repetido
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_confirmar_pedir_humano
+    - utter_tchau
+
+## Conversa Fiada 2
+> check_inicio_conversa
+* perguntar_sentimentos
+    - utter_responder_sentimentos
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_responder_sentimento_repetido
+    - utter_inicio
+* resolver_problema_rastreador OR resolver_problema_conta
+    -utter_confirmar_problema
+* afirmar
+    - action_verificar_erros
+    - utter_perguntar_resolvido
+> check_perguntar_resolvido
+
+## Conversa Fiada 3
+> check_inicio_conversa
+* perguntar_sentimentos
+    - utter_responder_sentimentos
+    - utter_inicio
+* mostrar_meus_dados
+    - utter_confirmar_problema
+    - action_mostrar_dados
+    - utter_perguntar_resolvido
+> check_perguntar_resolvido
+
+
+      
+
 ## Inicio Mostrar dados e ir embora
 > check_inicio_conversa
 * mostrar_meus_dados
