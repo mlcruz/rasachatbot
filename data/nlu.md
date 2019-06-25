@@ -8,13 +8,8 @@
 - Sim
 - Tudo tranquilo
 - Sim
-
-## intent:perguntar_sentimentos
-- Como está você?
-- Você está feliz?
-- Você está triste?
-- Tudo bem com você?
-
+- Ok
+- Sim
 
 ## intent:fim_conversa
 - tchau
@@ -31,6 +26,8 @@
 - Olá
 - oi bom dia
 - Oi, bom dia
+- Olá
+- Olá
 
 ## intent:mostrar_meus_dados
 - saber meus dados
@@ -49,6 +46,7 @@
 - nope
 - Não
 - Não
+- Não
 
 ## intent:pedir_humano
 - gostaria de falar com um humano
@@ -62,11 +60,22 @@
 - falar com gente
 - Me passe para um humano
 
+## intent:perguntar_sentimentos
+- Como está você?
+- Você está feliz?
+- Você está triste?
+- Tudo bem com você?
+- Olá, como você está?
+- Como você está se sentindo?
+- tudo bem com você?
+- Você é feliz?
+
 ## intent:resolver_problema_conta
 - minha conta não está funcionando
 - não consigo logar
 - não consigo entrar no site
 - Não consigo entrar na minha conta
+- Não consigo fazer login
 
 ## intent:resolver_problema_rastreador
 - meu rastreador não esta funcionando
@@ -101,6 +110,8 @@
 - [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id)
 - 3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA
 - [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id)
+- [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
+- [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id:3f628cb7-f0c5-4f56-a720-3f5bbd44c2ea)
 
 ## synonym:b95153c1-8cd0-41a4-a3e2-b3394efb9020
 - B95153C1-8CD0-41A4-A3E2-B3394EFB9020

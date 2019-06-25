@@ -264,3 +264,48 @@
 * afirmar
     - utter_confirmar_pedir_humano
     - utter_tchau
+
+## Generated Story -19194945792084382
+* inicio_conversa
+    - utter_perguntar_nome
+* responder_user_id{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
+    - slot{"user_id": "b95153c1-8cd0-41a4-a3e2-b3394efb9020"}
+    - action_receber_user_id
+    - slot{"first_name": "Fulano"}
+    - slot{"last_name": "Ciclano"}
+    - slot{"is_actived": true}
+    - slot{"user_name": "fulano@email.com"}
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_responder_sentimentos
+    - utter_inicio
+* resolver_problema_conta
+    - utter_confirmar_problema
+* afirmar
+    - action_verificar_erros
+    - utter_perguntar_resolvido
+* afirmar
+    - utter_confirmar_problema_resolvido
+* negar
+    - utter_tchau
+
+## Generated Story 1474522561256715419
+* inicio_conversa
+    - utter_perguntar_nome
+* responder_user_id{"user_id": "3f628cb7-f0c5-4f56-a720-3f5bbd44c2ea"}
+    - slot{"user_id": "3f628cb7-f0c5-4f56-a720-3f5bbd44c2ea"}
+    - action_receber_user_id
+    - slot{"first_name": "Beltrano"}
+    - slot{"last_name": "Souza"}
+    - slot{"is_actived": true}
+    - slot{"user_name": "beltrano@email.com"}
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_responder_sentimentos
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_responder_sentimento_repetido
+    - utter_inicio
+* perguntar_sentimentos
+    - utter_confirmar_pedir_humano
+    - utter_tchau

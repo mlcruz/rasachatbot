@@ -9,22 +9,22 @@ actions:
 - utter_perguntar_nome
 - utter_perguntar_pedir_humano
 - utter_perguntar_resolvido
-- utter_tchau
-- utter_responder_sentimentos
 - utter_responder_sentimento_repetido
+- utter_responder_sentimentos
+- utter_tchau
 entities:
 - user_id
 intents:
-- afirmar
+- perguntar_sentimentos
 - responder_user_id
 - inicio_conversa
 - negar
+- afirmar
 - resolver_problema_conta
 - pedir_humano
 - fim_conversa
 - mostrar_meus_dados
 - resolver_problema_rastreador
-- perguntar_sentimentos
 slots:
   first_name:
     initial_value: anonimo
@@ -44,8 +44,8 @@ templates:
   - text: Certo, passando para o suporte tecnico
   - text: Certo, passando para um humano
   utter_confirmar_problema:
-  - text: Eu entendi que você está com problemas. Vou iniciar uma verificação automatica em sua conta,
-      Tudo bem?
+  - text: Eu entendi que você está com problemas. Vou iniciar uma verificação automatica
+      em sua conta, Tudo bem?
   utter_confirmar_problema_resolvido:
   - text: Fico Feliz em resolver o seu problema. Deseja continuar?
   utter_inicio:
@@ -61,13 +61,13 @@ templates:
   utter_perguntar_resolvido:
   - text: Seu problema foi resolvido?
   - text: Consegui resolver seu problema?
+  utter_responder_sentimento_repetido:
+  - text: Já te falei como estou me sentindo. Vamos ao assuntos
+  - text: Um pouco de espaço, por favor
   utter_responder_sentimentos:
   - text: Hoje eu estou neutro. Não tenho sentimentos
   - text: Hoje eu estou feliz em poder ajudar
   - text: Estou triste por ter que lidar com você :(
-  utter_responder_sentimento_repetido:
-  - text: Já te falei como estou me sentindo. Vamos ao assuntos
-  - text: Um pouco de espaço, por favor
   utter_tchau:
   - text: Tchau!
   - text: Até mais!
