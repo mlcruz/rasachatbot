@@ -16,14 +16,14 @@ entities:
 - user_id
 intents:
 - afirmar
-- pedir_humano
 - responder_user_id
 - inicio_conversa
+- negar
+- resolver_problema_conta
+- pedir_humano
 - fim_conversa
 - mostrar_meus_dados
-- negar
 - resolver_problema_rastreador
-- resolver_problema_conta
 slots:
   first_name:
     initial_value: anonimo

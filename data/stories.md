@@ -199,3 +199,27 @@
 * afirmar
     - utter_confirmar_pedir_humano
     - utter_tchau
+
+## Generated Story -5989473256094215176
+* inicio_conversa
+    - utter_perguntar_nome
+* responder_user_id
+    - rewind
+* responder_user_id{"user_id": "3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA"}
+    - slot{"user_id": "3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA"}
+    - action_receber_user_id
+    - slot{"first_name": "Beltrano"}
+    - slot{"last_name": "Souza"}
+    - slot{"is_actived": true}
+    - slot{"user_name": "beltrano@email.com"}
+    - utter_inicio
+* resolver_problema_conta
+    - utter_confirmar_problema
+* afirmar
+    - action_verificar_erros
+    - utter_perguntar_resolvido
+* negar
+    - utter_perguntar_pedir_humano
+* afirmar
+    - utter_confirmar_pedir_humano
+    - utter_tchau

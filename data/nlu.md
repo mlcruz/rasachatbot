@@ -6,38 +6,30 @@
 - Tudo bem
 - Sim
 - Sim
-- Sim
-- Sim
-- Sim
-- Sim
+- Tudo tranquilo
 - Sim
 
 ## intent:fim_conversa
 - tchau
 - até mais
-- vou embora
 - obrigado
 - até logo
 - vou embora bot fedido
-- Vou embora esse bot é muito estupido
-- nope
-- Sai robo feio
+- Sai
 
 ## intent:inicio_conversa
 - Olá
-- Oi
 - Olá
-- Oi, tudo bem?
 - Olá, bom dia
 - Olá
 - oi bom dia
+- Oi, bom dia
 
 ## intent:mostrar_meus_dados
 - saber meus dados
 - Mostre minhas informacoes
 - Meus dados
 - mostrar meus dados
-- Mostrar meus dados
 - Mostrar meus dados
 
 ## intent:negar
@@ -48,6 +40,7 @@
 - claro que não
 - nao
 - nope
+- Não
 - Não
 
 ## intent:pedir_humano
@@ -66,6 +59,7 @@
 - minha conta não está funcionando
 - não consigo logar
 - não consigo entrar no site
+- Não consigo entrar na minha conta
 
 ## intent:resolver_problema_rastreador
 - meu rastreador não esta funcionando
@@ -84,7 +78,6 @@
 - gps não aparece no mapa
 - gps bloqueado
 - Meu rastreador tem problemas
-- Meu rastreador tem problemas
 
 ## intent:responder_user_id
 - [b95153c1-8cd0-41a4-a3e2-b3394efb9020](user_id)
@@ -98,7 +91,9 @@
 - [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
 - [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
 - [B95153C1-8CD0-41A4-A3E2-B3394EFB9020](user_id:b95153c1-8cd0-41a4-a3e2-b3394efb9020)
+- [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id)
 - 3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA
+- [3F628CB7-F0C5-4F56-A720-3F5BBD44C2EA](user_id)
 
 ## synonym:b95153c1-8cd0-41a4-a3e2-b3394efb9020
 - B95153C1-8CD0-41A4-A3E2-B3394EFB9020
